@@ -9,9 +9,7 @@ internal class Program
 {
     public static async Task Main(string[] args)
     {
-        //Root dati= await Api.Get(100);
-        
-        
+        //Root dati = await Api.Get(100);
     }
 
 }
