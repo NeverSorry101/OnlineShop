@@ -42,6 +42,5 @@ namespace OnlineShop.Classi
 
 }
 
-// Example usage:
 
 

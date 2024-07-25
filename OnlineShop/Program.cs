@@ -10,10 +10,9 @@ internal class Program
 {
     public static async Task Main(string[] args)
     {
-
         Root dati = await Api.Get(1000);
-        Querys.Print(Querys.GroupByCategory(dati.products));
-            
+        Sql.CreateTables();
+
     }
 }
 
