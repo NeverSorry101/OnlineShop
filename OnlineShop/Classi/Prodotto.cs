@@ -5,26 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.Json;
 
-namespace OnlineShop
+namespace OnlineShop.Classi
 {
-    public class Dimensions
-    {
-        public double? width { get; set; }
-        public double? height { get; set; }
-        public double? depth { get; set; }
-    }
 
-    public class Meta
-    {
-        public DateTime? createdAt { get; set; }
-        public DateTime? updatedAt { get; set; }
-        public string? barcode { get; set; }
-        public string? qrCode { get; set; }
-    }
+
+
 
     public class Product
     {
-        public int?  id { get; set; }
+        public int? id { get; set; }
         public string? title { get; set; }
         public string? description { get; set; }
         public string? category { get; set; }
@@ -46,19 +35,13 @@ namespace OnlineShop
         public Meta? meta { get; set; }
         public List<string>? images { get; set; }
         public string? thumbnail { get; set; }
+
     }
 
-    public class Review
-    {
-        public int? rating { get; set; }
-        public string? comment { get; set; }
-        public DateTime? date { get; set; }
-        public string? reviewerName { get; set; }
-        public string? reviewerEmail { get; set; }
-    }
+
 
 }
 
-    // Example usage:
+// Example usage:
 
 

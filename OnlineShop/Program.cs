@@ -1,16 +1,19 @@
 ﻿using Newtonsoft.Json;
-using OnlineShop;
+using OnlineShop.API;
 using System.Security.Cryptography;
 using System.Text.Json;
-
+using OnlineShop.Classi;
+using OnlineShop;
 
 
 internal class Program
 {
     public static async Task Main(string[] args)
     {
-        //Root dati = await Api.Get(100);
-    }
 
+        Root dati = await Api.Get(1000);
+        Querys.Print(Querys.GroupByCategory(dati.products));
+            
+    }
 }
 

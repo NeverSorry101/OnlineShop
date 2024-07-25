@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnlineShop
+namespace OnlineShop.API
 {
     internal class Api
     {
@@ -16,6 +16,7 @@ namespace OnlineShop
             {
                 string url = "https://dummyjson.com/product?limit=100";
                 HttpResponseMessage response = await client.GetAsync(url);
+
 
                 response.EnsureSuccessStatusCode();
                 string jsonResponse = await response.Content.ReadAsStringAsync();
