@@ -10,7 +10,7 @@ internal class Program
 {
     public static async Task Main(string[] args)
     {
-        Root dati = await Api.Get(1000);
+        //Root dati = await Api.Get(1000);
         Sql.CreateTables();
 
     }
